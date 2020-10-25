@@ -41,7 +41,7 @@ public class BasePage {
 		driver = e_driver;
 	}
 
-	// Click Methodby usingJAVA Generic
+	// Click Method by usingJAVA Generic
 	public <T> void click(T elementAttr) {
 		if (elementAttr.getClass().getName().contains("By")) {
 			driver.findElement((By) elementAttr).click();
